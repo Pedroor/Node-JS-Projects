@@ -18,6 +18,8 @@ const messagesController = new MessagesController();
 // BodyParams => Parametros enviados no corpo da requisição { JSON }
 
 routes.post("/settings", settingsController.create);
+routes.get("/settings/:username", settingsController.findByUsername);
+routes.put("/settings/:username", settingsController.update);
 routes.post("/users", usersController.create);
 
 routes.get("/messages/:id", messagesController.showByUser);

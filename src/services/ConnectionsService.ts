@@ -9,7 +9,7 @@ interface IConnectionCreate {
   id?: string;
 }
 
-class ConnectionsSerive {
+class ConnectionsService {
   private connectionsRepository: Repository<Connection>;
 
   constructor() {
@@ -27,6 +27,14 @@ class ConnectionsSerive {
 
     return connection;
   }
+
+  async findByUserId(user_id: string) {
+    const connection = await this.connectionsRepository.findOne({
+      user_id,
+    });
+
+    return connection;
+  }
 }
 
-export { ConnectionsSerive };
+export { ConnectionsService };
