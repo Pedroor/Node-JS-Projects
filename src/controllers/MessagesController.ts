@@ -7,6 +7,7 @@ class MessagesController {
     const messagesService = new MessagesService();
 
     const message = await messagesService.create({
+      //caso admin veja sem preenchido continuará funcionando
       admin_id,
       text,
       user_id,
@@ -15,8 +16,10 @@ class MessagesController {
     return response.json(message);
   }
 
+  // localhost:3333/messages/idDoUsuario
   async showByUser(request: Request, response: Response) {
     const { id } = request.params;
+
     const messagesService = new MessagesService();
 
     const list = await messagesService.listByUser(id);

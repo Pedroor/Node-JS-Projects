@@ -6,7 +6,16 @@ html {
 }
 
 body {
-  background: #ffffff;
+  background-image: url("../images/home.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+span{
+  color: #fff
+}
+strong{
+  color: #fff
 }
 
 .btn_support {
@@ -42,12 +51,10 @@ body {
 
 .in_support_header {
   float: right;
-  width: 320px;
+  width: 400px;
   height: 56px;
-
   background: #8257e6;
   border-radius: 16px 16px 0px 0px;
-
   display: flex;
   justify-content: space-between;
 }
@@ -64,11 +71,17 @@ body {
   cursor: pointer;
 }
 
+.icon_close:hover {
+  opacity: 0.7;
+}
+
 .chat_support {
   position: absolute;
-  max-width: 330px;
+  max-width: 410px;
   right: 10px;
   animation: up 1s;
+  bottom: 0px;
+   background-color: #fff;
 }
 
 .chat_support_hide {
@@ -97,6 +110,7 @@ body {
 .client {
   display: flex;
   flex-direction: column;
+  color: #8257e6;
 }
 
 .client .name {
@@ -106,29 +120,22 @@ body {
 .client_message {
   background: #f2ecfa;
   padding: 20px 10px;
-  margin: 10px 0;
   width: 250px;
-  margin-left: 30px;
+  margin: 10px 0 10px 30px;
   border-radius: 4px;
   line-height: 20px;
 }
 
-.client .message {
-  background: #f2ecfa;
-  /* background: #cecad4; */
-  padding: 20px 10px;
-  margin: 10px 0;
-  width: 250px;
-  margin-left: 30px;
-  border-radius: 4px;
-  line-height: 20px;
+.client_message_add {
+
+  color: #6f5eab;
 }
 
 .text_support {
   border: 1px solid #cec9c9;
   max-height: 500px;
   overflow-y: scroll;
-  /* border-bottom: 0px; */
+  background-color: #fff;
 }
 
 .admin {
@@ -136,12 +143,8 @@ body {
   flex-direction: column;
 }
 
-.admin .message {
-  width: 230px;
-  background: #f2ecfa;
-  border-radius: 4px;
-  padding: 10px;
-  margin-left: 12px;
+.admin_message_return {
+  color: #fff;
 }
 
 .message_send {
@@ -149,6 +152,7 @@ body {
   justify-content: space-between;
   border: 1px solid #cec9c9;
   align-items: center;
+  background-color: #fff;
 }
 
 .message_send input {
@@ -163,6 +167,10 @@ body {
   cursor: pointer;
 }
 
+.send_message_button:hover {
+  opacity: 0.7;
+}
+
 .line {
   border: 1px solid #e9e9e9;
   padding: 0;
@@ -174,16 +182,13 @@ body {
 }
 
 .text_help textarea {
-  width: 290px;
+  width: 360px;
   height: 115px;
-
   padding: 10px;
-
   background: #ffffff;
-  border: 1px solid #dddddd;
+  border: 1px solid #6f5eab;
   box-sizing: border-box;
   border-radius: 4px;
-
   resize: none;
 }
 
@@ -194,11 +199,11 @@ body {
 }
 
 .first_email input {
-  border: 1px solid #dddddd;
+  border: 1px solid #6f5eab;
   box-sizing: border-box;
   border-radius: 4px;
   height: 42px;
-  width: 290px;
+  width: 360px;
 }
 
 input[type="text"]:focus {
@@ -221,9 +226,19 @@ input[type="text"]:focus {
 }
 
 .btn_cancel {
-  border: 0;
+  width: 121px;
+  height: 40px;
+  background: #8257e69c;
+  border-radius: 4px;
+  color: #fff;
+  border: none;
   cursor: pointer;
-  margin-right: 10px;
+  margin-right: 5%;
+}
+
+.btn_cancel:hover {
+  opacity: 0.4;
+  background: red;
 }
 
 .button {
@@ -245,5 +260,175 @@ input[type="text"]:focus {
 
 .date {
   text-align: right;
-  font-size: 1px;
+  font-size: 5px;
+}
+
+
+.container {
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+.container:hover{
+  box-shadow: rgb(130 87 230) 0px 0px 0px 2px inset;
+}
+
+
+.value {
+  padding: 10px;
+  margin: 8px;
+  background: #8257e6;
+  color: #fff;
+  border-radius: 2px;
+  width: 35px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.value:hover {
+  opacity: 0.9;
+}
+
+.level {
+  display: flex;
+  margin: 8px;
+  justify-content: space-between;
+  width: 371px;
+}
+
+.text-chat{
+  color: #8257e6;
+}
+
+.close-medu:hover{
+  color: #fff!important;
+  border-radius: 5px !important;
+  background: #8257e6!important;
+}
+.answers {
+  width: 520px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.email-client{
+  -webkit-box-align: center;
+  align-items: center;
+  height: 100%;
+  padding: 0px 8px;
+  border-bottom: 2px solid transparent;
+  font-size: 10px;
+  font-weight: 400;
+  color: rgb(115, 115, 128);
+  transition: color 0.2s ease 0s, border-color 0.2s ease 0s;
+}
+
+
+.btn_atd {
+  cursor: pointer;
+  color: #fff;
+  background: #8257e6;
+  border: none;
+  height: 30px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.btn_atd:hover {
+  opacity: 0.9;
+}
+
+.admin {
+  border: 1px solid #ededed;
+  margin-top: 5px;
+  text-align: right;
+}
+
+.email {
+  float: left;
+  width: 350px;
+}
+
+.admin_send_message {
+  display: flex;
+  flex-direction: row;
+}
+
+.admin_send_message input {
+  width: 300px;
+  margin-right: 10px;
+}
+
+.admin_send_message button {
+  width: 100px;
+  cursor: pointer;
+}
+
+.admin_list_messages {
+  height: 300px;
+  overflow-y: scroll;
+}
+
+.admin_message_admin {
+  width: 300px;
+  background: #28cb73;
+  padding: 10px;
+  margin: 12px;
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 10px;
+
+  font-family: "Roboto", sans-serif;
+}
+
+#atendimentos {
+  width: 600px;
+}
+
+.admin_message_client {
+  width: 300px;
+  background: #6f5eab;
+  padding: 10px;
+  margin: 10px;
+  color: #eee;
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+.admin_date {
+  font-size: 10px;
+  color: #fff;
+}
+
+.in_support {
+  background: #8d7aef;
+  color: #fff;
+  font-size: 17px;
+}
+
+.btn_send {
+  background: #1eb363;
+  color: #eee;
+  border: none;
+}
+
+.btn_send:hover {
+  opacity: 0.8;
+}
+
+.text-adm{
+  color: #6f5eab;
+}
+.admin_name{
+  color: rgb(115, 115, 128);
+  font-size: 10px;
+  font-weight: 400;
 }

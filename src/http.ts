@@ -6,6 +6,14 @@ import path from "path";
 import "./database";
 import { routes } from "./routes";
 
+/**
+ * GET = Buscas
+ * POST = Criação
+ * PUT = Alteração, update
+ * DELETE = Deletar
+ * PATCH = Alterar uma informação especifica, exemplo: senha de um usuário.
+ */
+
 const app = express();
 
 app.use(express.static(path.join(__dirname, "..", "public")));
@@ -16,15 +24,16 @@ app.set("view engine", "html");
 app.get("/pages/client", (request, response) => {
   return response.render("html/client.html");
 });
+
 app.get("/pages/admin", (request, response) => {
   return response.render("html/admin.html");
 });
 
-const http = createServer(app); // criando protocolo HTTP
-const io = new Server(http); // criando protocolo de Websocket
+const http = createServer(app); // Criando protocolo http
+const io = new Server(http); // Criando protocolo ws
 
 io.on("connection", (socket: Socket) => {
-  console.log("Se conectou", socket.id);
+  // console.log("Se conectou", socket.id);
 });
 
 app.use(express.json());

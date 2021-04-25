@@ -3,6 +3,7 @@ import { Message } from "../entities/Message";
 import { MessagesRepository } from "../repositories/MessagesRepository";
 
 interface IMessageCreate {
+  // ADMIN_ID pode ser um atributo opcional
   admin_id?: string;
   text: string;
   user_id: string;
@@ -23,14 +24,17 @@ class MessagesService {
     });
 
     await this.messagesRepository.save(message);
+
     return message;
   }
 
+  //listagem pelo usuário
   async listByUser(user_id: string) {
     const list = await this.messagesRepository.find({
       where: { user_id },
       relations: ["user"],
     });
+
     return list;
   }
 }

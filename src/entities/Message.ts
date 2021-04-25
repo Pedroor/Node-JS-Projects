@@ -1,11 +1,12 @@
 import {
   Entity,
-  Column,
-  CreateDateColumn,
   PrimaryColumn,
+  CreateDateColumn,
+  Column,
   ManyToOne,
   JoinColumn,
 } from "typeorm";
+
 import { v4 as uuid } from "uuid";
 import { User } from "./User";
 
@@ -20,7 +21,6 @@ class Message {
   @Column()
   text: string;
 
-  // muitas mensagens para 1 usuário
   @JoinColumn({ name: "user_id" })
   @ManyToOne(() => User)
   user: User;
