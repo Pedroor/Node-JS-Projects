@@ -23,6 +23,10 @@
 <br>
 
 ## 🚀 Tecnologias
+<h1 align="center">
+<img alt="Home" src="https://media.giphy.com/media/5NjiRDtAx2t86k5Q4D/giphy.gif" width="92%" />
+
+</h1>
 
 - Para a criação desta API, foram usadas às seguintes dependências/frameworks/libs:
 
@@ -37,8 +41,11 @@
   <br>
 
 ## 💻 Projeto
+<h1 align="center">
+ <img alt="Home" src="https://media.giphy.com/media/5NjiRDtAx2t86k5Q4D/giphy.gif" width=92% />
 
- <img alt="Home" src="https://media.giphy.com/media/5NjiRDtAx2t86k5Q4D/giphy.gif" width="400" />
+</h1>
+ 
 
 🚀 O repositório tem como propósito compartilhar o conhecimento absorvido juntamente com os códigos desenvolvidos durante o evento.
 
