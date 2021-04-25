@@ -45,6 +45,10 @@ io.on("connect", socket => {
       text,
       user_id,
     });
+
+    const allMessages = await messagesService.listByUser(user_id);
+
+    socket.emit("client_list_all_messages", allMessages);
     // Salvar a conexão com socket id e user id
   });
 });
