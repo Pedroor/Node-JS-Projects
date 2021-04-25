@@ -68,7 +68,7 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para
 ---
 
 Códigos feitos com ♥ by Pedro Arthur <p align="center">
-<img alt="home" src="./.github/home.png" width="80%" height="80%">
+<img alt="teste" src="https://avatars.githubusercontent.com/pedroor" width="250px" />
 
 </p> durante a 5ª edição da NLW ( Next Level Week) proporcionada pela [Rocketseat](https://rocketseat.com.br). :purple_heart:
 
