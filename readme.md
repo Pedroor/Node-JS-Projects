@@ -17,7 +17,7 @@
 <br>
 
 <p align="center">
-    <img alt="home" src="https://i.imgur.com/WrfJrT8.png" width="80%" height="80%">
+    <img alt="home" src="./.github/home.png" width="80%" height="80%">
 </p>
 
 <br>
