@@ -38,6 +38,8 @@
 
 ## 💻 Projeto
 
+ <img alt="Home" src="https://media.giphy.com/media/5NjiRDtAx2t86k5Q4D/giphy.gif" width="400" />
+
 🚀 O repositório tem como propósito compartilhar o conhecimento absorvido juntamente com os códigos desenvolvidos durante o evento.
 
 ⚙ Este é a 5ª edição da NLW _(Next Level Week)_ promovido pela Rocketseat, uma Instituição Educacional de Tecnologia. Foi um evento com duração de 7 dias, sendo destes 5 dias de conteúdo imersivo na tecnologia, onde o objetivo e levar os programadores ao próximo nível.
