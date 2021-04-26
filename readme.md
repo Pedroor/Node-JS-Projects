@@ -50,7 +50,7 @@
 
 👾 O foco foi realmente no back-end, aplicando o protocolo websocket, em conjunto com as tecnologias citadas, para que seja possivel haver uma comunicação bilateral entre um usúario e um suporte. Sendo possível desabilitar o chat da página, similar a um widget.
 
-📫 Espero que goste, qualquer dúvida ou sugestão me encontro a disposição! [LinkedIn](https://www.linkedin.com/in/brunooliveira13/)
+📫 Espero que goste, qualquer dúvida ou sugestão me encontro a disposição! [LinkedIn](https://www.linkedin.com/in/pedro-arthur-299708192/)
 
 <br>
 
