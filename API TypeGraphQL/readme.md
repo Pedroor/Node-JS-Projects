@@ -1,5 +1,5 @@
 <h1 align="center">
-    NLW5: Criando um chat com Node.js e WebSocket
+   Api simples em GraphQL utilizando a lib [TypeGraphQL](https://typegraphql.com/)
 </h1>
 
 <p align="center">
@@ -9,9 +9,8 @@
 </p>
 
 <p align="center">
- <img src="https://img.shields.io/static/v1?label=PRs&message=welcome&color=15C3D6&labelColor=000000" alt="PRs welcome!" />
+ <img src="https://miro.medium.com/max/1100/0*_6u-GumXiNP1KQDe.jpg" alt="PRs welcome!" />
 
-  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=15C3D6&labelColor=000000">
 </p>
 
 <br>
@@ -24,31 +23,26 @@
 
 ## 🚀 Tecnologias
 
-
 - Para a criação desta API, foram usadas às seguintes dependências/frameworks/libs:
 
   - [NodeJS](https://nodejs.org/en/)
-  - [Express](https://expressjs.com/pt-br/)
   - [TypeScript](https://www.typescriptlang.org/)
-  - [TypeORM](https://typeorm.io/#/)
-  - [SQLite](https://sqlite.org/quickstart.html)
-  - [Isomnia](https://insomnia.rest)
-  - [Socket.IO](https://www.npmjs.com/package/socket.io)
+  - [TypeGraphQL](https://typegraphql.com/)
+  - [Mongodb](https://www.mongodb.com/)
+  - [ApolloServer](https://www.apollographql.com/docs/apollo-server/)
 
   <br>
 
 ## 💻 Projeto
+
 <h1 align="center">
- <img alt="Home" src="https://media.giphy.com/media/5NjiRDtAx2t86k5Q4D/giphy.gif" width=92% />
+ <img alt="Home" src="https://i.imgur.com/CcEG88u.png" width=92% />
+ <img alt="Home" src="https://i.imgur.com/5Abrk1D.png" width=92% />
 
 </h1>
- 
 
-🚀 O repositório tem como propósito compartilhar o conhecimento absorvido juntamente com os códigos desenvolvidos durante o evento.
 
-⚙ Este é a 5ª edição da NLW _(Next Level Week)_ promovido pela Rocketseat, uma Instituição Educacional de Tecnologia. Foi um evento com duração de 7 dias, sendo destes 5 dias de conteúdo imersivo na tecnologia, onde o objetivo e levar os programadores ao próximo nível.
-
-👾 O foco foi realmente no back-end, aplicando o protocolo websocket, em conjunto com as tecnologias citadas, para que seja possivel haver uma comunicação bilateral entre um usúario e um suporte. Sendo possível desabilitar o chat da página, similar a um widget.
+🚀 O repositório tem como propósito compartilhar conhecimentos básicos de GraphQL utilizando uma lib que facilita a integração do GraphQL com o Typescript.
 
 📫 Espero que goste, qualquer dúvida ou sugestão me encontro a disposição! [LinkedIn](https://www.linkedin.com/in/pedro-arthur-299708192/)
 
@@ -58,14 +52,12 @@
 
 1. Instale o [Yarn](https://yarnpkg.com/)
 2. Instale o [NodeJs](https://nodejs.org/en/)
-3. Clone este repositório
-4. Acesse a pasta do projeto e execute o comando `yarn install` para instalar todas às dependências
-5. Assim que a instalação terminar, digite o comando `yarn dev`
-6. A API estará rodando localmente na port 3333 (caso ela esteja em uso altere ela em `server.ts`)
-7. Abra o navegador em `localhost:3333/pages/client` para simular o lado do cliente.
-8. Em outra aba do navagador use `localhost:3333/pages/admin` para simular o lado do admin.
-
-<br>
+3. Instale o [MongoDB](https://www.mongodb.com/)
+4. Clone este repositório
+5. Acesse a pasta do projeto e execute o comando `yarn install` para instalar todas às dependências
+6. Assim que a instalação terminar, digite o comando `yarn start`
+7. A API estará rodando localmente na port 4100 (caso ela esteja em uso altere ela em `server.ts`)
+   <br>
 
 ## :memo: Licença
 
@@ -75,7 +67,5 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para
 
 Códigos feitos com ♥ by Pedro Arthur <p align="center">
 <img alt="teste" src="https://avatars.githubusercontent.com/pedroor" width="250px" />
-
-</p> durante a 5ª edição da NLW ( Next Level Week) proporcionada pela [Rocketseat](https://rocketseat.com.br). :purple_heart:
 
 <br>
