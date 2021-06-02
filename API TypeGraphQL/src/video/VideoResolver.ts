@@ -1,4 +1,5 @@
-import { Arg, Field, InputType, Mutation, Resolver } from "type-graphql";
+import { Arg, Field, InputType, Mutation, Query, Resolver } from "type-graphql";
+import { Video } from "./Video";
 import VideoSchema from "./VideoSchema";
 
 @InputType()
@@ -15,9 +16,17 @@ class VideoInput {
 
 @Resolver()
 class VideoResolver {
-  @Mutation()
-  addVideo(@Arg("videoInput") videoInput: VideoInput) {
-    return VideoSchema.create();
+  @Mutation(() => Video)
+  async addVideo(@Arg("videoInput") videoInput: VideoInput) {
+    console.log(videoInput);
+    const video = await VideoSchema.create(videoInput);
+    return video;
+  }
+
+  @Query(() => [Video])
+  async videos() {
+    const videos = VideoSchema.find();
+    return videos;
   }
 }
 
