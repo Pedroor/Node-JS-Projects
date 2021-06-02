@@ -15,10 +15,6 @@
 
 <br>
 
-<p align="center">
-    <img alt="Wheater" src="https://media.giphy.com/media/TVpeXDi8xTlyo/giphy.gif" width="250px" />
-</p>
-
 <br>
 
 ## 🚀 Tecnologias
@@ -40,7 +36,6 @@
  <img alt="Home" src="https://i.imgur.com/5Abrk1D.png" width=92% />
 
 </h1>
-
 
 🚀 O repositório tem como propósito compartilhar conhecimentos básicos de GraphQL utilizando uma lib que facilita a integração do GraphQL com o Typescript.
 
