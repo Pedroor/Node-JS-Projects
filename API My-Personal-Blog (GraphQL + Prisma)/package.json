@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@graphql-tools/load-files": "^6.3.2",
+    "@graphql-tools/merge": "^6.2.14"
+  }
+}

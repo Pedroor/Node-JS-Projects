@@ -9,8 +9,20 @@ const settingsController = new SettingsController();
 const usersController = new UsersController();
 const messagesController = new MessagesController();
 
-routes.post("/settings", settingsController.create);
+/**
+ * @swagger
+ * /settings:
+ *   get:
+ *     summary: Returns the list of all the books
+ *     responses:
+ *       '200':
+ *         description: The list of the books
+ *         content:
+ *           application/json:
+ *
+ */
 routes.get("/settings/:username", settingsController.findByUsername);
+routes.post("/settings", settingsController.create);
 routes.put("/settings/:username", settingsController.update);
 
 routes.post("/users", usersController.create);

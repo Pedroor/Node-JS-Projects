@@ -14,6 +14,30 @@ import { routes } from "./routes";
  * PATCH = Alterar uma informação especifica, exemplo: senha de um usuário.
  */
 
+const swaggerJsDoc = require("swagger-jsdoc");
+const swaggerUI = require("swagger-ui-express");
+
+const options = {
+  definition: {
+    info: {
+      title: "Chat-Service Using Websocket",
+      version: "1.0.0",
+      description: "Customer API desenvironment in NLW 5",
+      contact: {
+        name: "Pedro Arthur",
+      },
+      servers: [
+        {
+          url: "http://localhost:3333",
+        },
+      ],
+    },
+  },
+  apis: ["./routes/*.ts"],
+};
+
+const specs = swaggerJsDoc(options);
+
 const app = express();
 
 app.use(express.static(path.join(__dirname, "..", "public")));
@@ -39,5 +63,5 @@ io.on("connection", (socket: Socket) => {
 app.use(express.json());
 
 app.use(routes);
-
+app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(specs));
 export { http, io };
